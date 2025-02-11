@@ -31,7 +31,7 @@
          identifier: raw_gz_ship
          description: ship of Greenweez / we have the orders and their shipping costs
          columns:
-           - name: orders
+           - name: orders_id
              description: products of Greenweez / add a test unique and not null
              tests:
                 - unique
