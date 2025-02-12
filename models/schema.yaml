@@ -36,3 +36,28 @@
              tests:
                 - unique
                 - not_null
+       - name: adwords
+         identifier: raw_gz_adwords
+       - name: bing
+         identifier: raw_gz_bing
+       - name: criteo
+         identifier: raw_gz_criteo
+       - name: facebook
+         identifier: raw_gz_facebook
+         
+ models:
+       - name: campaigns
+         identifier: int_campaigns
+         columns:
+           - name: "(date_date || '_' || campaign_key)"
+             tests:
+                - unique
+                - not_null
+
+       - name: campaigns_day
+         identifier: int_campaigns_day
+         columns:
+           - name: date_date
+             tests:
+                - unique
+                - not_null
