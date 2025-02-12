@@ -61,3 +61,10 @@
              tests:
                 - unique
                 - not_null
+       - name: finance_campaigns_day
+         identifier: finance_campaign_day
+         columns:
+           - name: date_date
+             tests:
+                - unique
+                - not_null
